@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header id="toolbarSection">
+        <nav id="toolbar">
+            <ul>
+                <li id="Logo" class="toolbarElement"></li>
+                <a href="#informationsSection"><li class="toolbarElement">infos sur le portage</li></a>
+                <a href="#projectFilesSection"><li class="toolbarElement">fichiers du projet</li></a>
+                <a href="#DemoVersionDownloadLinkSection"><li class="toolbarElement">lien de la démo</li></a>
+                <a href="#followMeSection"><li class="toolbarElement">me suivre</li></a>
+                <a href="#helpMeSection"><li class="toolbarElement">assistance</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section id="informationsSection">
+        <ul id="informations">
+            <li class="title">vidéo de démonstration</li>
+            <li id="video"><video src="videos/videoTestOmoriPsvita.webm" controls></video></li>
+            <li id="animation"></li>
+            <li class="title">infos sur le portage</li>
+            <li class="text">
+                <p>OMORI for playstation vita est un portage du jeu OMORI sur playstation vita utilisant le moteur OpenRPGENGINE.</p>
+                <p>OpenRPGENGINE est un moteur de jeu développé par mes soins, basé sur lua player plus.</p>
+                <p>Il permet l'implémentation de nouvelles fonctionalités permettant la simplification du développement de JRPG en lua sur psvita.</p>
+                <p>De nouvelles versions du moteur permettant son fonctionnement sur d'autres plateformes sont en cours de développement.</p>
+                <p>Ce portage implémentera,grâce au moteur OpenRPGENGINE, de nouvelles fonctionnalités telles que,</p>
+                <p>l'affichage au format 16/9, l'amélioration de la maniabilité ou encore l'amélioration de la qualité graphique des sprites.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="projectFilesSection">
+        <article class="title">fichiers du projet</article>
+        <article id="projectFilesArticle">
+            Le code et l'ensemble des fichiers de développement du projet est disponible ici
+            <br>vous trouverez dans l'archive les assets du jeux ainsi que trois programmes lua:
+            <br>
+            <ul>
+                <li>events.lua : programme lua contenant l'ensemble des fonctions utilisées dans les instances d'objets de type event</li>
+                <li>openRPGEngine.lua : programme lua contenant le moteur OpenRPGENGINE.<br>il est appelable par un autre programme lua via la commande dofile("emplacementMoteur/openRPGEngine.lua")</li>
+                <li>index.lua: le jeu en lui même</li>
+            </ul>
+            <a href="omori for psvita project files.rar"><button>télecharger les fichiers du jeu</button></a>
+        </article>
+    </section>
+    <section id="DemoVersionDownloadLinkSection">
+        <article class="title">lien de téléchargement de la version de démo</article>
+        <article id="text">OMORIVITA.vpk</article>
+        <a href="OMORI port.vpk"><button id="button">Télécharger</button></a>
+    </section>
+    <section id="followMeSection">
+        <article class="title">Me suivre</article>
+        <article id="socialNetworksGrid">
+            <a href="https://www.linkedin.com/in/fouka-aness-311650334/"><img src="images/linkedInLogo.webp" alt="linkedInLogo" width="100px" height="100px"></a>
+            <a href="https://github.com/AnessFOUKA"><img src="images/githubLogo.webp" alt="githubLogo" width="100px" height="100px"></a>
+            <article>Fouka Aness</article>
+            <article>AnessFOUKA</article>
+        </article>
+    </section>
+    <section id="helpMeSection">
+        <article class="title">j'ai un problème</article>
+        <form>
+            <label>Si vous rencontrez le moindre problème technique avec le jeu ou le moteur. Décrivez le et soumettez le via ce formulaire</label>
+            <label id="email">email:<input type="text"></label>
+            <label id="message">message:<input type="text"></label>
+            <input type="submit" id="submitButton">
+        </form>
+    </section>
+    <footer>© OMOCAT tous droits réservés<br>Aness FOUKA OpenRPGENGINE CC BY-SA 4.0</footer>
+</body>
+</html>

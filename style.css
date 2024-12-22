@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+}/*this part permitts to remove the margin and padding of the body(that permits to pose the toolbar on the origin of the webpage)*/
+
+/*begin toolbar section*/
+#toolbar{
+    background-color: rgb(223, 223, 223);
+    width: 100%;
+    height: 79px;
+}
+
+#toolbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#toolbar a{
+    text-decoration: none;
+    color: black;
+}
+
+#toolbar a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #5b5b5b;
+}
+
+#toolbar ul #Logo{
+    background-image: url("images/omoriLogo.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 79px;
+    padding: 0;
+    margin: 0;
+}
+
+#toolbar ul .toolbarElement{
+    margin: 4px;
+    font-family: Arial;
+    font-size: 10px;
+}
+
+
+@media screen and (min-width:1390px) {
+    #toolbar ul .toolbarElement{
+        font-size: 20px;
+        margin: 28px;
+    }
+}
+
+/*end toolbar section*/
+
+/*begin informations section*/
+#informationsSection{
+    background-image: url("images/omoriFanartBackground.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1121px;
+    padding: 0;
+    margin: 0;
+}
+
+#informations{
+    color: white;
+    font-family: Arial;
+    list-style: none;
+}
+
+#informations #video{
+    margin-left: 0%;
+}
+
+@media screen and (min-width:1390px) {
+    #informations #video{
+        margin-left: 8%;
+    }
+}
+
+#informations .title{
+    margin-left: 0%;
+}
+
+@media screen and (min-width:1390px) {
+    #informations .title{
+        margin-left: 24%;
+    }
+}
+
+#informations .title::before,#informations .title::after{
+    background-color: #ffffff; 
+}
+
+#informations .text{
+    margin-left: 20%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+@media screen and (min-width:1390px) {
+    #informations .text{
+        font-size: 20px;
+    }
+}
+
+@keyframes imageChange {
+    0% { background-image: url('images/animation1.webp'); }
+    50% { background-image: url('images/animation2.webp'); }
+    100% { background-image: url('images/animation3.webp'); }
+}
+
+#informations #animation{
+    width: 99px;
+    height: 31px;
+    margin-left: 44%;
+    background-image: url('images/animation1.webp');
+    background-size: cover;
+    background-position: center;
+    animation: imageChange 1s infinite;
+}
+/*end informations section*/
+
+/*begin project files section*/
+#projectFilesSection .title{
+    margin-left: 2%;
+}
+
+@media screen and (min-width:1390px) {
+    #projectFilesSection .title{
+        margin-left: 24%;
+    }
+}
+
+#projectFilesSection .title::before,#projectFilesSection .title::after{
+    background-color: #000000; 
+}
+
+#projectFilesSection{
+    font-family: Arial;
+    font-size: 14px;
+}
+
+@media screen and (min-width:1390px) {
+    #projectFilesSection{
+        font-size: 20px;
+    }
+}
+
+#projectFilesArticle ul li{
+    margin-left: 4%;
+    margin-top: 1.01%;
+}
+
+@media screen and (min-width:1390px) {
+    #projectFilesArticle ul li{
+        margin-left: 2%;
+    }
+}
+
+#projectFilesArticle button{
+    width: 200px;
+    height: 40px;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+}
+#projectFilesArticle button:hover{
+    cursor: pointer;
+}
+/*end project files section*/
+
+/*begin demo version download link section*/
+#DemoVersionDownloadLinkSection .title{
+    margin-left: 0%;
+    text-align: center;
+}
+
+@media screen and (min-width:1390px) {
+    #DemoVersionDownloadLinkSection .title{
+        margin-left: 10%;
+    }
+}
+
+#DemoVersionDownloadLinkSection #text{
+    margin-left: 38%;
+    font-size: 14px;
+}
+
+@media screen and (min-width:1390px) {
+    #DemoVersionDownloadLinkSection #text{
+        margin-left: 44%;
+        font-size: 20px;
+    }
+}
+
+#DemoVersionDownloadLinkSection #button{
+    margin-left: 25%;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+    width: 250px;
+    height: 50px;
+}
+
+@media screen and (min-width:1390px) {
+    #DemoVersionDownloadLinkSection #button{
+        margin-left: 40%;
+    }
+}
+
+#DemoVersionDownloadLinkSection #button:hover{
+    cursor: pointer;
+}
+
+#DemoVersionDownloadLinkSection .title::before,#DemoVersionDownloadLinkSection .title::after{
+    background-color: #ffffff; 
+}
+
+#DemoVersionDownloadLinkSection{
+    font-family: Arial;
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+/*end demo version download link section*/
+
+/*begin follow me section*/
+#followMeSection .title{
+    margin-left: 4%;
+}
+
+@media screen and (min-width:1390px) {
+    #followMeSection .title{
+        margin-left: 31%;
+    }
+}
+
+#followMeSection .title::before,#followMeSection .title::after{
+    background-color: #000000; 
+}
+
+#followMeSection{
+    font-family: Arial;
+}
+
+#followMeSection #socialNetworksGrid{
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    grid-template-rows: repeat(2,100px);
+    margin-left: 30%;
+}
+
+@media screen and (min-width:1390px) {
+    #followMeSection #socialNetworksGrid{
+        margin-left: 42%;
+    }
+}
+
+#followMeSection #socialNetworksGrid article{
+    padding-top: 5%;
+}
+
+#followMeSection #socialNetworksGrid a:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+/*end demo version download link section*/
+
+/*begin help me section*/
+#helpMeSection{
+    font-family: Arial;
+}
+
+#helpMeSection .title{
+    margin-left: 0%;
+}
+
+@media screen and (min-width:1390px) {
+    #helpMeSection .title{
+        margin-left: 27%;
+    }
+}
+
+#helpMeSection form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#helpMeSection form label{
+    margin-left: 0%;
+    font-size: 14px;
+}
+
+@media screen and (min-width:1390px) {
+    #helpMeSection form label{
+        margin-left: 20%;
+        font-size: 20px;
+    }
+}
+
+#helpMeSection form #submitButton{
+    width: 230px;
+    height: 50px;
+    margin-left: 0%;
+}
+
+@media screen and (min-width:1390px) {
+    #helpMeSection form #submitButton{
+        margin-left: 40%;
+    }
+}
+
+#helpMeSection form #submitButton:hover{
+    cursor: pointer;
+}
+
+#helpMeSection form #email input{
+    width: 280px;
+    margin-left: 3.3%;
+}
+
+#helpMeSection form #message input{
+    width: 280px;
+    height: 80px;
+    margin-left: 1%;
+}
+
+#helpMeSection .title::before,#helpMeSection .title::after{
+    background-color: #000000; 
+}
+/*end help me section*/
+
+/*begin footer section*/
+footer{
+    color: white;
+    background-color: rgb(59, 59, 59);
+    height:100px;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2.5%;
+}
+/*end footer section*/
+
+/*begin title class definition*/
+.title{
+    font-size: 20px;
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 2%;
+    padding-top: 2%;
+}
+
+@media screen and (min-width:1390px) {
+    .title{
+        font-size: 40px;
+    }
+}
+
+.title::before,.title::after{
+    content: ""; 
+    width: 160px; 
+    height: 2px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*end title class definition*/
